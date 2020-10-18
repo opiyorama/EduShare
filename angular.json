@@ -132,6 +132,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EduShare-Project"
+    }
+  },
+  "defaultProject": "EduShare-Project",
+  "cli": {
+    "analytics": "e876f6e6-d98e-4eee-96cc-95d997257e20"
+  }
 }
