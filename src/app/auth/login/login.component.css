@@ -1,0 +1,13 @@
+.container{
+    padding: 0;
+    background: url('../../../assets/images/login.jpg');
+    position: fixed;
+    -webkit-filter: blur(60px);
+    height: 100vh;
+}
+form{
+    position: absolute;
+    top: 20vh;
+    left: 40vh;
+    width: 40vw;
+}

@@ -1,0 +1,67 @@
+<div class="body">
+    <div class="image"></div>
+    <a [routerLink]="['/login']">
+        <span class="logo">EduShare</span>
+    </a>
+    <span class="sign-up">Sign up</span>
+
+
+    <form #signUpForm (ngSubmit)="sign-up(signUpForm.value)" action="">
+        <div class="name field">
+            <label for="name">
+                <span class="label">Your Name</span>
+            </label>
+            <input (ngModel)="name" type="text" id='name' name='name' aria-labelledby="name" placeholder="Harry Porter">
+        </div>
+
+        <div class="email field">
+            <label for="email">
+                <span class="label">Email</span>
+            </label>
+            <input (ngModel)="email" type="text" id="email" name='email' aria-labelledby="email"
+                placeholder="someone@provider.com">
+        </div>
+        <div class="password field">
+            <label for="password">
+                <span class="label">Create password</span>
+            </label>
+            <input (ngModel)="password" type="password" id='password' name='password' aria-labelledby="password"
+                placeholder="...and keep it secret">
+        </div>
+        <div class="institution field">
+            <label for="school">
+                <span class="label">Institution</span>
+            </label>
+            <input (ngModel)="school" type="text" id='school' name='school' aria-labelledby="school"
+                placeholder="Hogwarts School of Wizardry">
+        </div>
+        <!-- <div class='machaguzi field'>
+        <label for="cars">
+          <span class="label">Choose a car: </span>
+        </label>
+  
+        <select id="cars" name="cars" multiple>
+          <option value="volvo">Volvo XC90</option>
+          <option value="saab">Saab 95</option>
+          <option value="mercedes">Mercedes SLK</option>
+          <option value="audi">Audi TT</option>
+        </select>
+  
+      </div> -->
+
+        <div class="subjects field">
+            <label for="subjects">
+                <span class="label">Subjects</span>
+            </label>
+            <input (ngModel)="subjects" type="text" id='subjects' name='subjects' aria-labelledby="subjects"
+                placeholder="Subject 1, Subject 2, Subject 3">
+        </div>
+
+
+        <button class="field">
+            <span class="button-text">Create Account</span>
+        </button>
+
+    </form>
+
+</div>
